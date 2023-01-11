@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --primary-color: hsl(225, 100%, 94%);
+    --secondary-color: hsl(245, 75%, 52%);
+    --third-color: hsl(225, 100%, 98%);
+    --fourth-color: hsl(224, 23%, 55%);
+    --fifth-color: hsl(223, 47%, 23%);
+    --font-text: 'Red Hat Display', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: var(--font-text);
+}
+
+body, .order, .order-pay, .order-price, .order-info{
+    display: flex;
+}
+
+body, .order, .order-pay, .order-info{
+    flex-direction: column;
+}
+
+.order-price{
+    flex-direction: row;
+}
+
+body{
+    background: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--fifth-color);
+}
+
+h1, .order-info>p{
+    text-align: center;
+}
+
+.order-pay>p:first-of-type, .link-order, button{
+    font-weight: 700;
+}
+
+.order-img img{
+    max-width: 100%;
+    width: 100%;
+    height: 27vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.order{
+    background: var(--third-color);
+    border-radius: 20px;
+    width: 345px;
+    margin: auto 0;
+}
+
+.order-info{
+    padding: 32px 25px 25px;
+}
+
+.order-info>p{
+    line-height: 26px;
+    font-size: 17px;
+    margin: 20px 0 25px;
+}
+
+.order-info>p, .order-pay>p:last-of-type{
+    color: var(--fourth-color);
+}
+
+.order-price{
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background: hsla(225, 100%, 94%, 0.4);
+}
+
+.order-pay{
+    gap: 7px;
+}
+
+.link-order, button{
+    cursor: pointer;
+}
+
+.link-order, button{
+    transition: .3s;
+}
+
+.link-order{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.link-order:hover{
+    color: var(--fourth-color);
+}
+
+button{
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+button:first-of-type{
+    background: var(--secondary-color);
+    color: var(--third-color);
+    margin: 20px 0 5px;
+}
+
+button:last-of-type{
+    background: var(--third-color);
+    color: var(--fourth-color);
+}
+
+button:first-of-type:hover{
+    background: var(--fourth-color);
+}
+button:last-of-type:hover{
+    color: black;
+}
+
+@media all and (min-width: 560px){
+    body{
+        background: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .order{
+        width: 400px;
+    }
+}
