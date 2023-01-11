@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github]()
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/CasDevSilva/Order-summary-card)
+- Live Site URL: [Netlify](https://deft-meringue-0eaa3d.netlify.app/)
 
 ## My process
 
